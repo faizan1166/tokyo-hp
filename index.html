@@ -10,146 +10,34 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <main class="page">
+    <header class="site-header">
+      <img src="assets/tokyo-hp-logo.png" alt="TOKI" class="header-logo">
+    </header>
+    <div class="container">
       <!-- Hero Section -->
-      <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1522383507783-6b66a3e49401?w=800&h=1000&fit=crop'); background-size: cover; background-position: center;">
-        <div class="hero-overlay"></div>
+      <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1522383507783-6b66a3e49401?w=1200&h=800&fit=crop');">
         <div class="hero-content">
           <h1 class="hero-title">TOKI JAPAN</h1>
           <p class="hero-subtitle">時を旅する、静かな日本へ</p>
-          <div class="scroll-indicator">
+          
+        </div>
+        <div class="scroll-info">
             <span>SCROLL</span>
-            <svg class="scroll-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor">
-              <path d="M10 2v14M5 12l5 5 5-5" stroke-width="1.5"/>
-            </svg>
+            <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 2v10M4 10l4 4 4-4"/>
+            </svg> -->
           </div>
-        </div>
       </section>
 
-      <!-- Popularity Section -->
-      <section class="section">
-        <div class="section-header">
-          <h2 class="section-title">POPULARITY</h2>
-          <p class="section-label">いま、人気な旅先</p>
-          <p class="section-desc">交差が入ります。交差が入ります。</p>
-        </div>
-        <a class="view-all-link" href="#">VIEW ALL</a>
-        <div class="cards-grid">
-          <div class="card">
-            <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1528127269029-c440edc4a989?w=400&h=300&fit=crop');">
-              <span class="card-label">KYOTO</span>
-              <button class="card-like">
-                <span>♥ 91</span>
-              </button>
-            </div>
-            <p class="card-text">交差が入ります</p>
-          </div>
-          <div class="card">
-            <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1540959375944-7049f642e9ad?w=400&h=300&fit=crop');">
-              <span class="card-label">KYOTO</span>
-              <button class="card-like">
-                <span>♥ 91</span>
-              </button>
-            </div>
-            <p class="card-text">交差が入ります</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- New Section -->
-      <section class="section">
-        <div class="section-header">
-          <h2 class="section-title">NEW</h2>
-          <p class="section-label">いま、新しい旅先</p>
-          <p class="section-desc">交差が入ります。交差が入ります。</p>
-        </div>
-        <a class="view-all-link" href="#">VIEW ALL</a>
-        <div class="cards-grid">
-          <div class="card">
-            <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1504681869696-d977e3a44bb0?w=400&h=300&fit=crop');">
-              <span class="card-label">KYOTO</span>
-              <button class="card-like">
-                <span>♥ 91</span>
-              </button>
-            </div>
-            <p class="card-text">交差が入ります</p>
-          </div>
-          <div class="card">
-            <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&h=300&fit=crop');">
-              <span class="card-label">KYOTO</span>
-              <button class="card-like">
-                <span>♥ 91</span>
-              </button>
-            </div>
-            <p class="card-text">交差が入ります</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Discover Section -->
-      <section class="section">
-        <div class="section-header">
-          <h2 class="section-title">DISCOVER</h2>
-          <p class="section-label">いま、心を動かす旅先</p>
-          <p class="section-desc">美しい時間と人に出会う旅。</p>
-        </div>
-        <a class="view-all-link" href="#">VIEW ALL</a>
-        <div class="cards-grid">
-          <div class="card">
-            <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1512438248244-672afba88e26?w=400&h=300&fit=crop');">
-              <span class="card-label">KYOTO</span>
-              <button class="card-like">
-                <span>♥ 91</span>
-              </button>
-            </div>
-            <p class="card-text">交差が入ります</p>
-          </div>
-          <div class="card">
-            <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1511884642898-4c92249e20b6?w=400&h=300&fit=crop');">
-              <span class="card-label">KYOTO</span>
-              <button class="card-like">
-                <span>♥ 91</span>
-              </button>
-            </div>
-            <p class="card-text">交差が入ります</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Category Section -->
-      <section class="section">
-        <div class="section-header">
-          <h2 class="section-title">CATEGORY</h2>
-        </div>
-        <div class="category-grid">
-          <div class="category-item">
-            <img src="assets/home.svg" alt="eat" class="category-icon">
-            <span>EAT</span>
-          </div>
-          <div class="category-item">
-            <img src="assets/chat.svg" alt="stay" class="category-icon">
-            <span>STAY</span>
-          </div>
-          <div class="category-item">
-            <img src="assets/search.svg" alt="play" class="category-icon">
-            <span>PLAY</span>
-          </div>
-          <div class="category-item">
-            <img src="assets/account.svg" alt="local" class="category-icon">
-            <span>LOCAL</span>
-          </div>
-        </div>
-      </section>
-    </main>
+   
+    </div>
 
     <footer class="site-footer">
-      <div class="footer-inner">
-        <img src="assets/tokyo-hp-logo.png" alt="TOKI" class="footer-logo">
-      </div>
+      <img src="assets/tokyo-hp-logo.png" alt="TOKI" class="footer-logo">
     </footer>
 
-    <nav class="bottom-nav">
-      <a class="nav-item active" href="index.html">
+     <nav class="bottom-nav">
+      <a class="nav-item" href="index.html">
         <img src="assets/home.svg" alt="home">
         <span>トップ</span>
       </a>
@@ -161,10 +49,11 @@
         <img src="assets/search.svg" alt="search">
         <span>プランナー</span>
       </a>
-      <a class="nav-item" href="login.html">
+      <a class="nav-item active" href="login.html">
         <img src="assets/account.svg" alt="account">
         <span>マイページ</span>
       </a>
     </nav>
   </body>
 </html>
+
