@@ -1,0 +1,236 @@
+/* Provide a local fallback for YuKyokasho; Noto Sans JP is loaded via link in each HTML head */
+@font-face {
+  font-family: "YuKyokasho";
+  src:url('assets/fonts/Klee_One/KleeOne-Regular.ttf') format('truetype');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "A P-OTF A1 Mincho StdN";
+  src:url('assets/fonts/Sorts_Mill_Goudy/SortsMillGoudy-Regular.ttf') format('truetype');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #ffffff;
+  --muted: #777;
+  --accent: #3149ff; /* purple for links */
+  --btn: #666;
+  --gray-body: #f0f0f0;
+  --secondary-font: "YuKyokasho", sans-serif;
+  --third-font: "A P-OTF A1 Mincho StdN", sans-serif;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+/* "YuKyokasho", */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  background: var(--gray-body);
+  color: #111;
+  font-weight: 300;
+}
+.page {
+  max-width: 750px;
+  padding: 1px 16px 180px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: var(--bg);
+}
+
+.hero {
+  max-width: 750px;
+  margin: 24px auto 40px;
+  text-align: center;
+}
+.hero-logo {
+  max-width: 160px;
+  opacity: 0.95;
+}
+.title {
+  margin: 14px 0 6px;
+  font-size: 20px;
+  letter-spacing: 6px;
+  font-weight: 500;
+}
+.subtitle {
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+.cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.auth-card {
+  /* max-width: 420px; */
+  margin: 28px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  /* box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05); */
+}
+.auth-title {
+  font-family: var(--secondary-font);
+  text-align: center;
+  margin: 0 0 60px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.auth-form input {
+  padding: 30px 18px;
+  border: 1px solid #222222;
+  border-radius: 5px;
+  font-size: 26px;
+  font-weight: 400;
+}
+.auth-form .btn-primary {
+  margin-top: 20px;
+}
+.btn-primary {
+  background: var(--btn);
+  color: #fff;
+  border: none;
+  padding: 28px 12px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #222222;
+}
+.auth-links {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+}
+.link {
+  display: block;
+  color: var(--accent);
+  text-decoration: none;
+  margin: 40px 0 0;
+}
+.policy-link {
+  display: block;
+  color: var(--accent);
+  /* text-decoration: underline; */
+  text-decoration: none;
+  margin-bottom: 60px;
+  font-size: 24px;
+}
+.policy-link span {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.site-footer {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background: #111;
+  color: #fff;
+  padding: 18px 0;
+  width: 100%;
+  max-width: 750px;
+}
+.footer-inner {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer-logo {
+  max-width: 140px;
+  opacity: 0.95;
+}
+
+.bottom-nav {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 95px;
+  background: #fff;
+  border-top: 1px solid #e6e6e6;
+  display: flex;
+  justify-content: space-around;
+  padding: 16px 0;
+  width: 100%;
+  max-width: 750px;
+}
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 12px;
+}
+.nav-item img {
+  width: 22px;
+  height: 22px;
+  display: block;
+  margin-bottom: 6px;
+  /* filter: grayscale(0) brightness(0) saturate(0) invert(0); */
+}
+.nav-item.active img {
+  filter: grayscale(0) brightness(0) invert(0);
+}
+.nav-item span {
+  display: block;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+@media (min-width: 700px) {
+  .page {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .auth-card {
+    padding: 0px;
+  }
+  .auth-title {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .auth-form input {
+    padding: 16px 12px;
+    font-size: 16px;
+  }
+  .auth-form {
+    gap:20px
+  }
+  .btn-primary {
+    padding: 12px;
+  }
+  .auth-links {
+    margin-top: 30px;
+        font-size: 16px;
+  }
+  .auth-links .link {
+    margin: 20px 0 0;
+  }
+  .policy-link {
+        font-size: 14px;
+        margin-bottom: 45px;
+  }
+}
