@@ -16,6 +16,7 @@
     --secondary-font: "YoKyokasho";
     --third-font: "A P-OTF  A1 Mincho StdN";
     --accent: #3149FF;
+    --btn: #717171;
 }
 
 html,
@@ -327,12 +328,14 @@ body {
   left: 0;
   right: 0;
   background: white;
-  border-top: 1px solid #e6e6e6;
+  border-top:none;
   display: flex;
   justify-content: space-around;
   align-items: stretch;
   z-index: 1000;
-  height: 64px;
+  height: 85px;
+  box-shadow: 0px -3px 7.5px 0px #A6A6A640;
+
 }
 
 .nav-item {
@@ -399,7 +402,7 @@ body {
   border: none;
   padding: 14px 16px;
   border-radius: 12px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -693,9 +696,9 @@ body {
   background: var(--btn);
   color: #fff;
   border: none;
-  padding: 28px 12px;
+  padding: 24px 12px;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   border: 1px solid #222222;
 }
@@ -781,6 +784,7 @@ body {
   display: block;
   font-weight: 400;
   letter-spacing: 0.2px;
+  font-size: 16px;
 }
 
 @media (min-width: 700px) {
