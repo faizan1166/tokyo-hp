@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TOKI — 詳細</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Serif+JP:wght@200..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- <header class="site-header">
+      <img src="assets/tokyo-hp-logo.png" alt="TOKI" class="header-logo">
+    </header> -->
+
+    <div class="details-container">
+      <!-- Hero/Main image Section -->
+       <div class="details-hero-main">
+      <section class="details-hero" id="details-hero-img">
+        <div class="details-hero-overlay">
+          <div class="details-hero-copy">
+            <span class="details-hero-location" id="details-hero-loc">KYOTO</span>
+            <span class="details-hero-text">文章が入ります</span>
+          </div>
+        </div>
+      </section>
+      </div>
+
+      <!-- Details Content Section -->
+      <div class="details-content">
+        <h1 class="details-title" id="details-title">城下町公園</h1>
+        
+        <p class="details-description" id="details-desc">
+          説明文章が入ります。説明文章が入ります。説明文章が入ります。説明文章が入ります。説明文章が入ります。説明文章が入ります。説明文章が入ります。説明文章が入ります。説明文章が入ります。説明文章が入ります。説明文章が入ります。説明文章が入ります。
+        </p>
+
+        <!-- Tags / Area Pills -->
+        <div class="details-tags" id="details-tags-container">
+          <span class="details-tag-pill">エリア</span>
+          <span class="details-tag-pill">エリア</span>
+        </div>
+
+        <!-- Access Section -->
+        <section class="details-section">
+          <h2 class="details-section-heading">アクセス</h2>
+          <div class="details-address-row">
+            <!-- Map Pin SVG -->
+            <img src="assets/location-dark.svg" alt="map pin" class="map-pin">
+            <span id="details-address-text">京都府亀岡市◯◯</span>
+          </div>
+
+          <!-- GoogleMap Button -->
+          <a href="#" class="details-btn details-btn-dark" id="google-map-btn" target="_blank">
+            <img src="assets/location-light.svg" alt="map pin" class="map-pin">
+            GoogleMapで見る
+          </a>
+
+          <!-- Share Button -->
+          <button class="details-btn details-btn-outline" id="share-btn">
+            <img src="assets/share.svg" alt="share">
+            シェアする
+          </button>
+        </section>
+      </div>
+
+      <!-- Related Videos Slider Section -->
+      <section class="section not-f">
+        <h2 class="details-related-heading">関連動画</h2>
+
+        <div class="cards-scroll">
+          <div class="cards-grid">
+            <!-- Kyoto Card -->
+            <a href="details.html?title=城下町公園&image=assets/card1.png&location=KYOTO&address=京都府亀岡市荒塚町&tags=京都,亀岡" class="card" style="text-decoration: none; color: inherit;">
+              <div class="card-image" style="background-image: url('assets/card1.png');">
+                <div class="card-overlay">
+                  <span class="like-count"><img src="./assets/heart-fav.svg" />  91</span>
+                  <div class="card-copy">
+                    <span class="location-label">KYOTO</span>
+                    <span class="card-text">文章が入ります</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Tokyo Card -->
+            <a href="details.html?title=緑池公園&image=assets/card2.png&location=TOKYO&address=東京都三鷹市下連雀&tags=東京,三鷹" class="card" style="text-decoration: none; color: inherit;">
+              <div class="card-image" style="background-image: url('assets/card2.png');">
+                <div class="card-overlay">
+                  <span class="like-count"><img src="./assets/heart-fav.svg" />  91</span>
+                  <div class="card-copy">
+                    <span class="location-label">TOKYO</span>
+                    <span class="card-text">文章が入ります</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Kyoto Card 3 -->
+            <a href="details.html?title=桜坂&image=assets/card3.png&location=KYOTO&address=京都府京都市大原&tags=京都,桜" class="card" style="text-decoration: none; color: inherit;">
+              <div class="card-image" style="background-image: url('assets/card3.png');">
+                <div class="card-overlay">
+                  <span class="like-count"><img src="./assets/heart-fav.svg" />  91</span>
+                  <div class="card-copy">
+                    <span class="location-label">KYOTO</span>
+                    <span class="card-text">文章が入ります</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Tokyo Card 4 -->
+            <a href="details.html?title=スクランブル交差点&image=assets/card4.png&location=TOKYO&address=東京都渋谷区道玄坂&tags=東京,渋谷" class="card" style="text-decoration: none; color: inherit;">
+              <div class="card-image" style="background-image: url('assets/card4.png');">
+                <div class="card-overlay">
+                  <span class="like-count"><img src="./assets/heart-fav.svg" />  91</span>
+                  <div class="card-copy">
+                    <span class="location-label">TOKYO</span>
+                    <span class="card-text">文章が入ります</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <img src="assets/tokyo-hp-logo.png" alt="TOKI" class="footer-logo">
+        </div>
+      </footer>
+
+      <!-- Bottom Nav -->
+      <nav class="bottom-nav">
+        <a class="nav-item" href="index.html">
+          <img src="assets/home.svg" alt="home">
+          <span>トップ</span>
+        </a>
+        <a class="nav-item" href="discover-new.html">
+          <img src="assets/search.svg" alt="search">
+          <span>検索</span>
+        </a>
+        <a class="nav-item" href="#">
+          <img src="assets/chat.svg" alt="chat">
+          <span>プランナー</span>
+        </a>
+        <a class="nav-item" href="login.html">
+          <img src="assets/account.svg" alt="account">
+          <span>マイページ</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Script to dynamically load contents -->
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const title = params.get('title') || '城下町公園';
+      const image = params.get('image') || 'assets/card1.png';
+      const locationLabel = params.get('location') || 'KYOTO';
+      const address = params.get('address') || '京都府亀岡市◯◯';
+      const tagsString = params.get('tags') || 'エリア,エリア';
+
+      // Update text details
+      document.getElementById('details-title').textContent = title;
+      document.getElementById('details-hero-img').style.backgroundImage = `url('${image}')`;
+      document.getElementById('details-hero-loc').textContent = locationLabel;
+      document.getElementById('details-address-text').textContent = address;
+      
+      // Update page dynamic title
+      document.title = `TOKI — ${title}`;
+
+      // Build Tags
+      const tagsContainer = document.getElementById('details-tags-container');
+      tagsContainer.innerHTML = '';
+      tagsString.split(',').forEach(tag => {
+        if (tag.trim()) {
+          const span = document.createElement('span');
+          span.className = 'details-tag-pill';
+          span.textContent = tag.trim();
+          tagsContainer.appendChild(span);
+        }
+      });
+
+      // Update map link
+      const mapBtn = document.getElementById('google-map-btn');
+      mapBtn.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(title + ' ' + address)}`;
+
+      // Share function
+      const shareBtn = document.getElementById('share-btn');
+      shareBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (navigator.share) {
+          navigator.share({
+            title: `TOKI — ${title}`,
+            text: `${title} - ${address}`,
+            url: window.location.href
+          }).catch(err => console.log(err));
+        } else {
+          navigator.clipboard.writeText(window.location.href).then(() => {
+            alert('リンクをクリップボードにコピーしました！');
+          }).catch(err => {
+            console.error('Failed to copy text: ', err);
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

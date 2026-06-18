@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>マイページ — TOKI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Serif+JP:wght@200..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+      // Auth redirect check
+      if (localStorage.getItem('isLoggedIn') !== 'true') {
+        window.location.href = 'login.html';
+      }
+    </script>
+  </head>
+  <body>
+    <div class="profile-container">
+      <main class="profile-content">
+        <!-- Profile User Info Header -->
+        <header class="profile-header">
+          <div class="profile-avatar">
+            <img src="assets/tokyo-hp-logo.png" alt="TOKI" class="profile-avatar-logo">
+          </div>
+          <h1 class="profile-username">TOKI JAPAN</h1>
+          <p class="profile-email">toki@example.com</p>
+          <p class="profile-join-date">2026年6月から利用</p>
+          
+          <!-- Edit Profile Button -->
+          <button class="profile-edit-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+            プロフィールを編集する
+          </button>
+        </header>
+
+        <!-- Section: Posted Reviews -->
+        <p class="profile-section-title">投稿した口コミ</p>
+
+        <!-- Cards Grid wrapper (reusing discover-new styling) -->
+        <div class="discover-new" style="width: 100%;">
+          <section class="section discover-cards-section" style="margin-top: 0; padding: 0;">
+            <div class="cards-grid" style="padding: 0;">
+              
+              <!-- Card 1: Pagoda -->
+              <article class="card discover-card">
+                <a href="details.html?title=五重塔&image=assets/card1.png&location=KYOTO&address=京都府京都市東山区清水八坂上町388&tags=京都,清水寺,歴史" style="text-decoration: none; color: inherit;">
+                  <div class="card-image" style="background-image: url('assets/card1.png')"></div>
+                  <div class="discover-card-body">
+                    <p class="discover-card-title">五重塔</p>
+                    <div class="discover-card-tags">
+                      <span>エリア</span>
+                      <span>エリア</span>
+                      <span>エリア</span>
+                    </div>
+                  </div>
+                </a>
+                <button class="card-like"><img src="./assets/heart-fav.svg" />  91</button>
+              </article>
+
+              <!-- Card 2: Green Pond -->
+              <article class="card discover-card">
+                <a href="details.html?title=緑池公園&image=assets/card2.png&location=TOKYO&address=東京都三鷹市下連雀1-1-83&tags=東京,三鷹,自然" style="text-decoration: none; color: inherit;">
+                  <div class="card-image" style="background-image: url('assets/card2.png')"></div>
+                  <div class="discover-card-body">
+                    <p class="discover-card-title">緑池公園</p>
+                    <div class="discover-card-tags">
+                      <span>エリア</span>
+                      <span>エリア</span>
+                      <span>エリア</span>
+                    </div>
+                  </div>
+                </a>
+                <button class="card-like"><img src="./assets/heart-fav.svg" />  91</button>
+              </article>
+
+              <!-- Card 3: Koi Pond -->
+              <article class="card discover-card">
+                <a href="details.html?title=桜坂&image=assets/card3.png&location=KYOTO&address=京都府京都市大原&tags=京都,桜,川" style="text-decoration: none; color: inherit;">
+                  <div class="card-image" style="background-image: url('assets/card3.png')"></div>
+                  <div class="discover-card-body">
+                    <p class="discover-card-title">桜坂</p>
+                    <div class="discover-card-tags">
+                      <span>エリア</span>
+                      <span>エリア</span>
+                      <span>エリア</span>
+                    </div>
+                  </div>
+                </a>
+                <button class="card-like"><img src="./assets/heart-fav.svg" />  91</button>
+              </article>
+
+              <!-- Card 4: Crossing -->
+              <article class="card discover-card">
+                <a href="details.html?title=スクランブル交差点&image=assets/card4.png&location=TOKYO&address=東京都渋谷区道玄坂&tags=東京,渋谷,交差点" style="text-decoration: none; color: inherit;">
+                  <div class="card-image" style="background-image: url('assets/card4.png')"></div>
+                  <div class="discover-card-body">
+                    <p class="discover-card-title">スクランブル交差点</p>
+                    <div class="discover-card-tags">
+                      <span>エリア</span>
+                      <span>エリア</span>
+                      <span>エリア</span>
+                    </div>
+                  </div>
+                </a>
+                <button class="card-like"><img src="./assets/heart-fav.svg" />  91</button>
+              </article>
+
+              <!-- Card 5: Hakone -->
+              <article class="card discover-card">
+                <a href="details.html?title=箱根温泉&image=assets/card-5.png&location=KANAGAWA&address=神奈川県足柄下郡箱根町&tags=神奈川,箱根,温泉" style="text-decoration: none; color: inherit;">
+                  <div class="card-image" style="background-image: url('assets/card-5.png')"></div>
+                  <div class="discover-card-body">
+                    <p class="discover-card-title">箱根温泉</p>
+                    <div class="discover-card-tags">
+                      <span>エリア</span>
+                      <span>エリア</span>
+                      <span>エリア</span>
+                    </div>
+                  </div>
+                </a>
+                <button class="card-like"><img src="./assets/heart-fav.svg" />  91</button>
+              </article>
+
+              <!-- Card 6: Fish Market -->
+              <article class="card discover-card">
+                <a href="details.html?title=魚市場&image=assets/card-6.png&location=TOKYO&address=東京都中央区築地&tags=東京,築地,市場" style="text-decoration: none; color: inherit;">
+                  <div class="card-image" style="background-image: url('assets/card-6.png')"></div>
+                  <div class="discover-card-body">
+                    <p class="discover-card-title">魚市場</p>
+                    <div class="discover-card-tags">
+                      <span>エリア</span>
+                      <span>エリア</span>
+                      <span>エリア</span>
+                    </div>
+                  </div>
+                </a>
+                <button class="card-like"><img src="./assets/heart-fav.svg" />  91</button>
+              </article>
+
+            </div>
+          </section>
+        </div>
+
+        <!-- Bottom Actions -->
+        <div class="profile-actions">
+          <button class="profile-btn profile-btn-dark">動画を投稿する</button>
+          <button class="profile-btn profile-btn-outline" id="logout-btn">ログアウト</button>
+        </div>
+
+        <!-- Terms and Privacy Policy Links -->
+        <div class="profile-links">
+          <a href="terms.html">利用規約</a>
+          <span class="divider">|</span>
+          <a href="privacy.html">プライバシーポリシー</a>
+                    <span class="divider">|</span>
+
+                    <a href="about.html">について</a>
+
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <img src="assets/tokyo-hp-logo.png" alt="TOKI" class="footer-logo">
+        </div>
+      </footer>
+
+      <!-- Bottom Nav -->
+      <nav class="bottom-nav">
+        <a class="nav-item" href="index.html">
+          <img src="assets/home.svg" alt="home">
+          <span>トップ</span>
+        </a>
+        <a class="nav-item" href="discover-new.html">
+          <img src="assets/search.svg" alt="search">
+          <span>検索</span>
+        </a>
+        <a class="nav-item" href="#">
+          <img src="assets/chat.svg" alt="chat">
+          <span>プランナー</span>
+        </a>
+        <a class="nav-item active" href="profile.html">
+          <img src="assets/account.svg" alt="account">
+          <span>マイページ</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Script to handle logout -->
+    <script>
+      document.getElementById('logout-btn').addEventListener('click', (e) => {
+        e.preventDefault();
+        localStorage.removeItem('isLoggedIn');
+        window.location.href = 'login.html';
+      });
+    </script>
+  </body>
+</html>
