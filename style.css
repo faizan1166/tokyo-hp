@@ -780,7 +780,7 @@ body {
   margin-bottom: 60px;
   font-size: 24px;
 }
-.policy-link span {
+.policy-link a {
   text-decoration: underline;
   text-underline-offset: 8px;
 }
